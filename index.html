@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazingtir | Premium E-Commerce</title>
+    <!-- Modern Typography: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Premium Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar glass">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="ph-fill ph-hexagon"></i>
+                Amazingtir
+            </div>
+            <div class="nav-links">
+                <a href="#discover">Discover</a>
+                <a href="#marketplace">Marketplace</a>
+                <a href="#sellers">Sellers</a>
+                <a href="#about">About</a>
+            </div>
+            <div class="nav-actions">
+                <button class="icon-btn search-btn"><i class="ph ph-magnifying-glass"></i></button>
+                <button class="icon-btn tooltip-container"><i class="ph ph-heart"></i></button>
+                <button class="icon-btn tooltip-container" onclick="showCart()"><i class="ph ph-shopping-bag"></i><span class="badge" id="cart-count">0</span></button>
+                <div class="profile-menu">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=100" alt="Profile" class="avatar">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="badge-pill">✨ The Next Generation Marketplace</div>
+            <h1 class="hero-title">Experience <br><span class="text-gradient">Commerce</span> Redefined.</h1>
+            <p class="hero-subtitle">Discover premium products curated from top-tier sellers globally. Sleek, minimal, and built for a luxurious shopping experience.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Start Exploring</button>
+                <button class="btn btn-secondary"><i class="ph ph-storefront"></i> Become a Seller</button>
+            </div>
+        </div>
+        <div class="hero-image-wrapper">
+             <div class="glass-card mockup-card">
+                 <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=2665&auto=format&fit=crop" alt="Premium Headphones" class="product-showcase">
+                 <div class="floating-price">
+                     $349.00
+                     <span>BeoPlay H9i</span>
+                 </div>
+             </div>
+        </div>
+        <div class="background-glow blur-purple top-right"></div>
+        <div class="background-glow blur-dark bottom-left"></div>
+    </header>
+
+    <!-- Marketplace Section -->
+    <section class="products-section" id="marketplace">
+        <div class="section-header">
+            <h2>Trending Essentials</h2>
+            <div class="filters">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Tech</button>
+                <button class="filter-btn">Fashion</button>
+                <button class="filter-btn">Lifestyle</button>
+            </div>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+            <!-- Product Cards injected via JS -->
+        </div>
+    </section>
+
+    <!-- Value/Trust Section -->
+    <section class="trust-features">
+        <div class="feature fade-in">
+            <div class="feature-icon"><i class="ph ph-shield-check"></i></div>
+            <h3>Secure Checkout</h3>
+            <p>Enterprise-grade encryption for all your transactions and privacy.</p>
+        </div>
+        <div class="feature fade-in">
+            <div class="feature-icon"><i class="ph ph-globe-hemisphere-west"></i></div>
+            <h3>Global Shipping</h3>
+            <p>Fast, reliable delivery straight to your door, anywhere.</p>
+        </div>
+        <div class="feature fade-in">
+            <div class="feature-icon"><i class="ph ph-star"></i></div>
+            <h3>Verified Reviews</h3>
+            <p>Authentic feedback from our community of real buyers.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
