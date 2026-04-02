@@ -59,7 +59,6 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.02em; }
     font-size: 1.25rem; font-weight: 700;
     display: flex; align-items: center; gap: 0.5rem; color: var(--text-main);
 }
-
 .logo i { color: var(--primary); font-size: 1.75rem; }
 
 .nav-links { display: flex; gap: 2.5rem; }
