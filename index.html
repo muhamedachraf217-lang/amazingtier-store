@@ -1,61 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazing Tier | Premium Marketplace</title>
+    <title>Amazingtir | Premium E-Commerce</title>
+    <meta name="description" content="Discover premium products curated from top-tier sellers globally at Amazingtir. Your ultimate high-end e-commerce marketplace.">
+    <meta property="og:title" content="Amazingtir | Premium E-Commerce">
+    <meta property="og:description" content="Discover premium products curated from top-tier sellers globally at Amazingtir.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Preload LCP Image -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=2665&auto=format&fit=crop">
     <!-- Modern Typography: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Premium Icons -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar glass">
         <div class="nav-container">
             <div class="logo">
                 <i class="ph-fill ph-hexagon"></i>
-                Amazing tier
+                Amazingtir
             </div>
             <div class="nav-links">
                 <a href="#discover">Discover</a>
                 <a href="#marketplace">Marketplace</a>
                 <a href="#sellers">Sellers</a>
                 <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </div>
             <div class="nav-actions">
-                <button class="icon-btn search-btn"><i class="ph ph-magnifying-glass"></i></button>
-                <button class="icon-btn tooltip-container"><i class="ph ph-heart"></i></button>
-                <button class="icon-btn tooltip-container" onclick="showCart()"><i class="ph ph-shopping-bag"></i><span class="badge" id="cart-count">0</span></button>
+                <button class="icon-btn search-btn" aria-label="Search"><i class="ph ph-magnifying-glass"></i></button>
+                <button class="icon-btn tooltip-container" aria-label="Wishlist"><i class="ph ph-heart"></i></button>
+                <button class="icon-btn tooltip-container" onclick="showCart()" aria-label="Cart"><i class="ph ph-shopping-bag"></i><span
+                        class="badge" id="cart-count">0</span></button>
                 <div class="profile-menu">
-                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=100" alt="Profile" class="avatar">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=100"
+                        alt="Profile" class="avatar">
                 </div>
             </div>
         </div>
     </nav>
 
+    <main>
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-content">
             <div class="badge-pill">✨ The Next Generation Marketplace</div>
             <h1 class="hero-title">Experience <br><span class="text-gradient">Commerce</span> Redefined.</h1>
-            <p class="hero-subtitle">Discover premium products curated from top-tier sellers globally. Sleek, minimal, and built for a luxurious shopping experience.</p>
+            <p class="hero-subtitle">Discover premium products curated from top-tier sellers globally. Sleek, minimal,
+                and built for a luxurious shopping experience.</p>
             <div class="hero-buttons">
                 <button class="btn btn-primary">Start Exploring</button>
                 <button class="btn btn-secondary"><i class="ph ph-storefront"></i> Become a Seller</button>
             </div>
         </div>
         <div class="hero-image-wrapper">
-             <div class="glass-card mockup-card">
-                 <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=2665&auto=format&fit=crop" alt="Premium Headphones" class="product-showcase">
-                 <div class="floating-price">
-                     $349.00
-                     <span>BeoPlay H9i</span>
-                 </div>
-             </div>
+            <div class="glass-card mockup-card">
+                <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=2665&auto=format&fit=crop"
+                    alt="Premium Headphones" class="product-showcase">
+                <div class="floating-price">
+                    $349.00
+                    <span>BeoPlay H9i</span>
+                </div>
+            </div>
         </div>
         <div class="background-glow blur-purple top-right"></div>
         <div class="background-glow blur-dark bottom-left"></div>
@@ -78,6 +93,36 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container glass-card">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                <div class="contact-details">
+                    <div class="contact-item"><i class="ph ph-envelope-simple"></i> hello@amazingtir.com</div>
+                    <div class="contact-item"><i class="ph ph-phone"></i> +1 (555) 123-4567</div>
+                    <div class="contact-item"><i class="ph ph-map-pin"></i> 123 Luxury Ave, NY</div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" class="form-input" placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" class="form-input" placeholder="john@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="form-input" rows="4" placeholder="How can we help you?"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary submit-btn">Send Message <i class="ph ph-paper-plane-right"></i></button>
+            </form>
+        </div>
+    </section>
+
     <!-- Value/Trust Section -->
     <section class="trust-features">
         <div class="feature fade-in">
@@ -96,7 +141,9 @@
             <p>Authentic feedback from our community of real buyers.</p>
         </div>
     </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
+
 </html>

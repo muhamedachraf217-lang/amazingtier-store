@@ -205,6 +205,32 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.02em; }
 .product-price { font-size: 1.25rem; font-weight: 700; color: var(--text-main); }
 .product-rating { display: flex; align-items: center; gap: 0.25rem; font-size: 0.9rem; color: #fbbf24; font-weight: 600;}
 
+/* Contact Section */
+.contact-section { max-width: 1000px; margin: 6rem auto; padding: 0 2rem; }
+.contact-container {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;
+    padding: 3rem; background: var(--glass-bg); backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px); border-radius: var(--radius-lg);
+    border: 1px solid var(--glass-border); box-shadow: var(--shadow-soft);
+}
+.contact-info h2 { font-size: 2.5rem; margin-bottom: 1rem; letter-spacing: -0.02em; }
+.contact-info p { color: var(--text-muted); margin-bottom: 2.5rem; font-size: 1.05rem; }
+.contact-details { display: flex; flex-direction: column; gap: 1.5rem; }
+.contact-item { display: flex; align-items: center; gap: 1rem; font-weight: 500; font-size: 1.05rem; }
+.contact-item i { color: var(--primary); font-size: 1.5rem; }
+
+.contact-form { display: flex; flex-direction: column; gap: 1.5rem; }
+.form-group { display: flex; flex-direction: column; gap: 0.5rem; }
+.form-group label { font-size: 0.9rem; font-weight: 600; color: var(--text-main); }
+.form-input {
+    width: 100%; padding: 1rem; border: 1px solid #e2e8f0; border-radius: var(--radius-sm);
+    background: #fff; font-family: 'Inter', sans-serif; font-size: 1rem; color: var(--text-main);
+    transition: var(--transition); outline: none; resize: vertical;
+}
+.form-input:focus { border-color: var(--primary); box-shadow: 0 0 0 4px rgba(109, 40, 217, 0.1); }
+.form-input::placeholder { color: #94a3b8; }
+.submit-btn { margin-top: 1rem; justify-content: center; }
+
 /* Features / Trust elements */
 .trust-features {
     max-width: 1400px; margin: 8rem auto; padding: 4rem 2rem;
@@ -237,5 +263,6 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.02em; }
     .hero-title { font-size: 3rem; }
     .hero-buttons { justify-content: center; }
     .nav-links { display: none; }
+    .contact-container { grid-template-columns: 1fr; gap: 2rem; padding: 2rem; }
     .trust-features { grid-template-columns: 1fr; gap: 3rem; }
 }
