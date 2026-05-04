@@ -25,6 +25,8 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -161,6 +163,7 @@ body { padding-top: 80px; }
     min-height: 100vh; position: relative; isolation: isolate;
     display: flex; align-items: center; justify-content: space-between;
     max-width: 1400px; margin: 0 auto; padding: 8rem 2rem 2rem; gap: 4rem;
+    overflow-x: hidden;
 }
 .background-glow {
     position: absolute; z-index: -1; border-radius: 50%; filter: blur(100px);
