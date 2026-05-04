@@ -145,7 +145,7 @@ body { padding-top: 60px; }
 .icon-btn {
     background: transparent; border: none; font-size: 1.5rem; cursor: pointer;
     color: var(--text-main); transition: var(--transition); display: flex;
-    position: relative;
+    position: relative; padding: 0.5rem;
 }
 .icon-btn:hover { color: var(--primary); transform: translateY(-2px); }
 .badge {
@@ -360,7 +360,7 @@ body { padding-top: 60px; }
         max-height: 500px;
         display: flex;
     }
-    .nav-links a { width: 100%; text-align: left; padding: 0.5rem 0; }
+    .nav-links a { width: 100%; text-align: left; padding: 1rem 0; }
     .hero {
         flex-direction: column;
         text-align: center;

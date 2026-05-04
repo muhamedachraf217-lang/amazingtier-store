@@ -104,8 +104,8 @@ document.addEventListener('DOMContentLoaded', () => {
     renderProducts();
 
     // 2. Scroll effect for navbar glassmorphism
+    const nav = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
-        const nav = document.querySelector('.navbar');
         if (window.scrollY > 20) {
             nav.style.boxShadow = '0 10px 30px -10px rgba(0,0,0,0.1)';
             nav.style.background = 'rgba(255, 255, 255, 0.85)';
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
             nav.style.boxShadow = 'none';
             nav.style.background = 'rgba(255, 255, 255, 0.75)';
         }
-    });
+    }, { passive: true });
 
     // 3. Simple filter interactivity
     const filterBtns = document.querySelectorAll('.filter-btn');
