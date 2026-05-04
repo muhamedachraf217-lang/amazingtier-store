@@ -46,7 +46,8 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.02em; }
 }
 
 /* Navbar */
-.navbar {
+.navbar { height: 60px; }
+body { padding-top: 60px; }
     position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
     transition: var(--transition);
 }
@@ -57,9 +58,56 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.02em; }
     border-bottom: 1px solid var(--glass-border);
 }
 .nav-container {
+    flex-wrap: wrap;
+    gap: 0.5rem;
     max-width: 1400px; padding: 1rem 2rem; margin: 0 auto;
     display: flex; align-items: center; justify-content: space-between;
 }
+
+/* Mobile adjustments for navigation links */
+@media (max-width: 900px) {
+    .nav-links {
+        width: 100%;
+    }
+    .nav-links a {
+        font-size: 1rem;
+    }
+}
+
+/* Ensure product cards occupy full width on small screens */
+@media (max-width: 600px) {
+    .product-card {
+        width: 100%;
+        max-width: none;
+    }
+    .product-grid {
+        gap: 1.5rem;
+    }
+    .contact-container {
+        padding: 1rem;
+    }
+    .contact-form .form-group {
+        flex-direction: column;
+    }
+    .form-input {
+        font-size: 0.95rem;
+        padding: 0.8rem;
+    }
+    .btn {
+        padding: 0.8rem 1.4rem;
+        font-size: 0.9rem;
+    }
+    .hero {
+        padding-top: 5rem;
+    }
+    .hero-title {
+        font-size: 2rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
+
 .logo {
     display: flex; align-items: center; gap: 0.6rem; text-decoration: none;
 }
@@ -71,12 +119,17 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.02em; }
     color: var(--text-main);
     transition: var(--transition);
 }
+.brand-gradient {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .logo:hover .logo-text {
     color: var(--primary);
 }
 .logo i { color: var(--primary); font-size: 2rem; }
 
-.nav-links { display: flex; gap: 2.5rem; }
 .nav-links a {
     text-decoration: none; color: var(--text-muted); font-size: 0.95rem;
     font-weight: 500; transition: var(--transition); position: relative;
@@ -274,10 +327,84 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.02em; }
 
 /* Responsiveness */
 @media (max-width: 900px) {
-    .hero { flex-direction: column; text-align: center; padding-top: 8rem; }
-    .hero-title { font-size: 3rem; }
-    .hero-buttons { justify-content: center; }
-    .nav-links { display: none; }
-    .contact-container { grid-template-columns: 1fr; gap: 2rem; padding: 2rem; }
-    .trust-features { grid-template-columns: 1fr; gap: 3rem; }
+    
+.menu-btn {
+    display: block;
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: var(--transition);
+    margin-left: auto;
+}
+
+
+    .menu-btn:hover { color: var(--primary); }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: var(--glass-bg);
+        border: 1px solid var(--glass-border);
+        padding: 1rem;
+        width: 220px;
+        z-index: 300;
+        transition: max-height var(--transition);
+        overflow: hidden;
+        max-height: 0;
+    }
+    .nav-links.open {
+        max-height: 500px;
+        display: flex;
+    }
+    .nav-links a { width: 100%; text-align: left; padding: 0.5rem 0; }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 4rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .hero-title { font-size: 2.5rem; }
+    .hero-buttons { justify-content: center; gap: 0.5rem; }
+    .hero-image-wrapper { display: none; }
+
+/* Refine mobile navigation */
+.nav-links {
+    transition: max-height var(--transition);
+    overflow: hidden;
+    max-height: 0;
+}
+.nav-links.open {
+    max-height: 500px; /* enough to show all links */
+    display: flex;
+}
+
+/* Adjust hero section for mobile */
+@media (max-width: 600px) {
+    .hero {
+        padding-top: 6rem;
+    }
+    .hero-title {
+        font-size: 2rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+    .product-grid { grid-template-columns: 1fr; }
+    .contact-container,
+    .trust-features {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1.5rem;
+    }
 }

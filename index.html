@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazingtier | Premium E-Commerce</title>
-    <meta name="description" content="Discover premium products curated from top-tier sellers globally at Amazingtier. Your ultimate high-end e-commerce marketplace.">
-    <meta property="og:title" content="Amazingtier | Premium E-Commerce">
-    <meta property="og:description" content="Discover premium products curated from top-tier sellers globally at Amazingtier.">
+    <title>AmazingTier – Premium E‑Commerce Marketplace</title>
+    <meta name="description" content="Discover premium products curated from top‑tier sellers worldwide at AmazingTier – a luxurious, high‑end marketplace.">
+    <meta property="og:title" content="AmazingTier – Premium E‑Commerce Marketplace">
+    <meta property="og:description" content="Discover premium products curated from top‑tier sellers worldwide at AmazingTier.">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <!-- Preload LCP Image -->
@@ -27,8 +27,9 @@
         <div class="nav-container">
             <a href="#" class="logo">
                 <i class="ph-fill ph-hexagon"></i>
-                <span class="logo-text">Amazingtir</span>
+                <span class="logo-text brand-gradient">AmazingTier</span>
             </a>
+            <button class="menu-btn" aria-label="Menu"><i class="ph ph-list"></i></button>
             <div class="nav-links">
                 <a href="#discover">Discover</a>
                 <a href="#marketplace">Marketplace</a>
@@ -143,6 +144,13 @@
     </section>
     </main>
 
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 
