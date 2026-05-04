@@ -5,7 +5,7 @@ const products = [
         category: "Tech",
         price: "$399.00",
         rating: 4.9,
-        image: "https://images.unsplash.com/photo-1434493789847-2f02b0c4e20b?q=80&w=800&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1434493789847-2f02b0c4e20b?q=70&w=600&auto=format&fit=crop"
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ const products = [
         category: "Audio",
         price: "$348.00",
         rating: 4.8,
-        image: "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=800&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=70&w=600&auto=format&fit=crop"
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ const products = [
         category: "Fashion",
         price: "$145.00",
         rating: 4.7,
-        image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=800&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=70&w=600&auto=format&fit=crop"
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ const products = [
         category: "Footwear",
         price: "$160.00",
         rating: 4.9,
-        image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=70&w=600&auto=format&fit=crop"
     },
     {
         id: 5,
@@ -37,7 +37,7 @@ const products = [
         category: "Tech",
         price: "$199.00",
         rating: 4.6,
-        image: "https://images.unsplash.com/photo-1611078714088-757e7d9b93fc?q=80&w=800&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1611078714088-757e7d9b93fc?q=70&w=600&auto=format&fit=crop"
     },
     {
         id: 6,
@@ -45,7 +45,7 @@ const products = [
         category: "Lifestyle",
         price: "$31.00",
         rating: 4.9,
-        image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?q=80&w=800&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?q=70&w=600&auto=format&fit=crop"
     },
     {
         id: 7,
@@ -53,7 +53,7 @@ const products = [
         category: "Tech",
         price: "$899.00",
         rating: 4.7,
-        image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=800&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=70&w=600&auto=format&fit=crop"
     },
     {
         id: 8,
@@ -61,7 +61,7 @@ const products = [
         category: "Home",
         price: "$85.00",
         rating: 4.8,
-        image: "https://images.unsplash.com/photo-1612086300185-508544cb4820?q=80&w=800&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1612086300185-508544cb4820?q=70&w=600&auto=format&fit=crop"
     }
 ];
 
