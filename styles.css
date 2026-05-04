@@ -439,7 +439,28 @@ body { padding-top: 80px; }
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
     }
-    .product-grid { grid-template-columns: 1fr; }
+    .product-grid { 
+        grid-template-columns: 1fr 1fr; 
+        gap: 1rem;
+    }
+    .product-info {
+        padding: 0.8rem;
+    }
+    .product-title {
+        font-size: 0.9rem;
+    }
+    .product-price {
+        font-size: 1rem;
+    }
+    .action-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+    }
+    .card-actions {
+        top: 0.5rem;
+        right: 0.5rem;
+    }
     .contact-container,
     .trust-features {
         grid-template-columns: 1fr;
