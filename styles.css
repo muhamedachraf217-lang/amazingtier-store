@@ -394,6 +394,7 @@ body { padding-top: 80px; }
     .hero-title { font-size: 2.5rem; }
     .hero-buttons { justify-content: center; gap: 0.5rem; }
     .hero-image-wrapper { display: none; }
+}
 
 /* Refine mobile navigation */
 .nav-links {
@@ -421,8 +422,6 @@ body { padding-top: 80px; }
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
     }
-}
-
     .product-grid { grid-template-columns: 1fr; }
     .contact-container,
     .trust-features {
@@ -431,7 +430,6 @@ body { padding-top: 80px; }
         padding: 1.5rem;
     }
 }
-
 /* Extra small screens to prevent nav overflow */
 @media (max-width: 450px) {
     .nav-container {
