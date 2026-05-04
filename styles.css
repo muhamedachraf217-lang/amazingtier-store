@@ -22,6 +22,11 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-sec);
@@ -56,10 +61,20 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.02em; }
     display: flex; align-items: center; justify-content: space-between;
 }
 .logo {
-    font-size: 1.25rem; font-weight: 700;
-    display: flex; align-items: center; gap: 0.5rem; color: var(--text-main);
+    display: flex; align-items: center; gap: 0.6rem; text-decoration: none;
 }
-.logo i { color: var(--primary); font-size: 1.75rem; }
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+    color: var(--text-main);
+    transition: var(--transition);
+}
+.logo:hover .logo-text {
+    color: var(--primary);
+}
+.logo i { color: var(--primary); font-size: 2rem; }
 
 .nav-links { display: flex; gap: 2.5rem; }
 .nav-links a {

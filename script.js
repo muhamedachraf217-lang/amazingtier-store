@@ -78,7 +78,7 @@ function renderProducts() {
             <div class="product-image-container">
                 <img src="${product.image}" alt="${product.title}" class="product-image" loading="lazy" width="800" height="800">
                 <div class="card-actions">
-                    <button class="action-btn" title="Add to Wishlist"><i class="ph ph-heart"></i></button>
+                    <button class="action-btn" title="Add to Wishlist" onclick="alert('Added to Wishlist!')"><i class="ph ph-heart"></i></button>
                     <button class="action-btn" title="Add to Cart" onclick="addToCart('${product.title.replace(/'/g, "\\'")}')"><i class="ph ph-shopping-cart-simple"></i></button>
                 </div>
             </div>

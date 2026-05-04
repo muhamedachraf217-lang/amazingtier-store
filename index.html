@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazing tier | Premium E-Commerce</title>
-    <meta name="description" content="Discover premium products curated from top-tier sellers globally at Amazingtier. Your ultimate high-end e-commerce marketplace.">
-    <meta property="og:title" content="Amazing tier | Premium E-Commerce">
-    <meta property="og:description" content="Discover premium products curated from top-tier sellers globally at Amazingtier.">
+    <title>Amazingtir | Premium E-Commerce</title>
+    <meta name="description" content="Discover premium products curated from top-tier sellers globally at Amazingtir. Your ultimate high-end e-commerce marketplace.">
+    <meta property="og:title" content="Amazingtir | Premium E-Commerce">
+    <meta property="og:description" content="Discover premium products curated from top-tier sellers globally at Amazingtir.">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <!-- Preload LCP Image -->
@@ -15,7 +15,7 @@
     <!-- Modern Typography: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
     <!-- Premium Icons -->
     <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="styles.css">
@@ -25,20 +25,20 @@
     <!-- Navbar -->
     <nav class="navbar glass">
         <div class="nav-container">
-            <div class="logo">
+            <a href="#" class="logo">
                 <i class="ph-fill ph-hexagon"></i>
-                Amazing tier
-            </div>
+                <span class="logo-text">Amazingtir</span>
+            </a>
             <div class="nav-links">
                 <a href="#discover">Discover</a>
                 <a href="#marketplace">Marketplace</a>
-                <a href="#sellers">Sellers</a>
+                <a href="#" onclick="alert('Sellers section coming soon!'); return false;">Sellers</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
             </div>
             <div class="nav-actions">
-                <button class="icon-btn search-btn" aria-label="Search"><i class="ph ph-magnifying-glass"></i></button>
-                <button class="icon-btn tooltip-container" aria-label="Wishlist"><i class="ph ph-heart"></i></button>
+                <button class="icon-btn search-btn" aria-label="Search" onclick="alert('Search feature coming soon!')"><i class="ph ph-magnifying-glass"></i></button>
+                <button class="icon-btn tooltip-container" aria-label="Wishlist" onclick="alert('Wishlist feature coming soon!')"><i class="ph ph-heart"></i></button>
                 <button class="icon-btn tooltip-container" onclick="showCart()" aria-label="Cart"><i class="ph ph-shopping-bag"></i><span
                         class="badge" id="cart-count">0</span></button>
                 <div class="profile-menu">
@@ -51,15 +51,15 @@
 
     <main>
     <!-- Hero Section -->
-    <header class="hero">
+    <header class="hero" id="discover">
         <div class="hero-content">
             <div class="badge-pill">✨ The Next Generation Marketplace</div>
             <h1 class="hero-title">Experience <br><span class="text-gradient">Commerce</span> Redefined.</h1>
             <p class="hero-subtitle">Discover premium products curated from top-tier sellers globally. Sleek, minimal,
                 and built for a luxurious shopping experience.</p>
             <div class="hero-buttons">
-                <button class="btn btn-primary">Start Exploring</button>
-                <button class="btn btn-secondary"><i class="ph ph-storefront"></i> Become a Seller</button>
+                <button class="btn btn-primary" onclick="document.getElementById('marketplace').scrollIntoView({behavior: 'smooth'})">Start Exploring</button>
+                <button class="btn btn-secondary" onclick="alert('Seller registration coming soon!')"><i class="ph ph-storefront"></i> Become a Seller</button>
             </div>
         </div>
         <div class="hero-image-wrapper">
@@ -118,13 +118,13 @@
                     <label for="message">Message</label>
                     <textarea id="message" class="form-input" rows="4" placeholder="How can we help you?"></textarea>
                 </div>
-                <button type="button" class="btn btn-primary submit-btn">Send Message <i class="ph ph-paper-plane-right"></i></button>
+                <button type="button" class="btn btn-primary submit-btn" onclick="alert('Message sent successfully!'); this.form.reset();">Send Message <i class="ph ph-paper-plane-right"></i></button>
             </form>
         </div>
     </section>
 
     <!-- Value/Trust Section -->
-    <section class="trust-features">
+    <section class="trust-features" id="about">
         <div class="feature fade-in">
             <div class="feature-icon"><i class="ph ph-shield-check"></i></div>
             <h3>Secure Checkout</h3>
