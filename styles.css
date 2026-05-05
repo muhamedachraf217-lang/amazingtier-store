@@ -239,7 +239,7 @@ body { padding-top: 80px; }
 .filter-btn.active, .filter-btn:hover { background: var(--text-main); color: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
 
 .product-grid {
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2.5rem;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.5rem;
 }
 
 /* Product Card */
