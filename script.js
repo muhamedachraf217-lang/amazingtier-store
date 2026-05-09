@@ -2,7 +2,7 @@ const products = [
     {
         id: 1,
         title: "Apple Watch Series 9",
-        category: "Tech",
+        category: "تقنية",
         price: "$399.00",
         rating: 4.9,
         image: "https://images.unsplash.com/photo-1434493789847-2f02b0c4e20b?q=70&w=600&auto=format&fit=crop"
@@ -10,15 +10,15 @@ const products = [
     {
         id: 2,
         title: "Sony WH-1000XM5",
-        category: "Audio",
+        category: "صوتيات",
         price: "$348.00",
         rating: 4.8,
         image: "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=70&w=600&auto=format&fit=crop"
     },
     {
         id: 3,
-        title: "Minimalist Leather Backpack",
-        category: "Fashion",
+        title: "حقيبة ظهر جلدية بسيطة",
+        category: "أزياء",
         price: "$145.00",
         rating: 4.7,
         image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=70&w=600&auto=format&fit=crop"
@@ -26,7 +26,7 @@ const products = [
     {
         id: 4,
         title: "Nike Air Max 270",
-        category: "Footwear",
+        category: "أحذية",
         price: "$160.00",
         rating: 4.9,
         image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=70&w=600&auto=format&fit=crop"
@@ -34,7 +34,7 @@ const products = [
     {
         id: 5,
         title: "Aura Smart Ring",
-        category: "Tech",
+        category: "تقنية",
         price: "$199.00",
         rating: 4.6,
         image: "https://images.unsplash.com/photo-1611078714088-757e7d9b93fc?q=70&w=600&auto=format&fit=crop"
@@ -42,23 +42,23 @@ const products = [
     {
         id: 6,
         title: "Aesop Resurrection Balm",
-        category: "Lifestyle",
+        category: "أسلوب حياة",
         price: "$31.00",
         rating: 4.9,
         image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?q=70&w=600&auto=format&fit=crop"
     },
     {
         id: 7,
-        title: "Pro 4K Drone Explorer",
-        category: "Tech",
+        title: "طائرة بدون طيار 4K احترافية",
+        category: "تقنية",
         price: "$899.00",
         rating: 4.7,
         image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=70&w=600&auto=format&fit=crop"
     },
     {
         id: 8,
-        title: "Geometric Ceramic Vase",
-        category: "Home",
+        title: "مزهرية سيراميك هندسية",
+        category: "المنزل",
         price: "$85.00",
         rating: 4.8,
         image: "https://images.unsplash.com/photo-1612086300185-508544cb4820?q=70&w=600&auto=format&fit=crop"
@@ -78,8 +78,8 @@ function renderProducts() {
             <div class="product-image-container">
                 <img src="${product.image}" alt="${product.title}" class="product-image" loading="lazy" width="800" height="800">
                 <div class="card-actions">
-                    <button class="action-btn" title="Add to Wishlist" onclick="alert('Added to Wishlist!')"><i class="ph ph-heart"></i></button>
-                    <button class="action-btn" title="Add to Cart" onclick="addToCart('${product.title.replace(/'/g, "\\'")}')"><i class="ph ph-shopping-cart-simple"></i></button>
+                    <button class="action-btn" title="إضافة إلى قائمة الرغبات" onclick="alert('تمت الإضافة إلى قائمة الرغبات!')"><i class="ph ph-heart"></i></button>
+                    <button class="action-btn" title="أضف إلى السلة" onclick="addToCart('${product.title.replace(/'/g, "\\'")}')"><i class="ph ph-shopping-cart-simple"></i></button>
                 </div>
             </div>
             <div class="product-info">
@@ -149,9 +149,9 @@ function updateCartUI() {
 }
 
 function showCart() {
-  let message = "Your Cart:\n\n";
+  let message = "سلة التسوق الخاصة بك:\n\n";
   if (cart.length === 0) {
-      alert("Your cart is empty.");
+      alert("سلة التسوق فارغة.");
       return;
   }
   cart.forEach((item, index) => {
